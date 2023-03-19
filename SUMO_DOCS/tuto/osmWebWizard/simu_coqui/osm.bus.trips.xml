@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-03-06 18:47:22.549143 by osmWebWizard.py UNKNOWN
+<configuration>
+    <begin value="0"/>
+    <end value="3600"/>
+    <fringe-factor value="5"/>
+    <fringe-start-attributes value="departSpeed=&quot;max&quot;"/>
+    <insertion-density value="4.0"/>
+    <min-distance.fringe value="10.0"/>
+    <min-distance value="600.0"/>
+    <net-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.net.xml.gz"/>
+    <remove-loops value="True"/>
+    <route-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.bus.rou.xml"/>
+    <trip-attributes value="departLane=&quot;best&quot;"/>
+    <output-trip-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.bus.trips.xml"/>
+    <prefix value="bus"/>
+    <validate value="True"/>
+    <vclass value="bus"/>
+    <vehicle-class value="bus"/>
+</configuration>
+-->
+
+<!-- generated on 2023-03-06 18:47:22 by Eclipse SUMO duarouter Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/duarouterConfiguration.xsd">
+
+    <input>
+        <net-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.net.xml.gz"/>
+        <route-files value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.bus.trips.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/tuto/osmWebWizard/2023-03-06-18-47-20/osm.bus.trips.xml.tmp"/>
+        <alternatives-output value="NUL"/>
+        <write-trips value="true"/>
+    </output>
+
+    <processing>
+        <remove-loops value="true"/>
+    </processing>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <report>
+        <no-warnings value="true"/>
+        <ignore-errors value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="bus_bus" vClass="bus"/>
+    <trip id="bus5" type="bus_bus" depart="187.31" departLane="best" departSpeed="max" from="-548865432" to="-548865432"/>
+    <trip id="bus10" type="bus_bus" depart="374.61" departLane="best" departSpeed="max" from="1079019252" to="1079019252"/>
+    <trip id="bus26" type="bus_bus" depart="974.00" departLane="best" from="23018399" to="23018399"/>
+    <trip id="bus28" type="bus_bus" depart="1048.92" departLane="best" departSpeed="max" from="226955132#0" to="226955132#0"/>
+    <trip id="bus29" type="bus_bus" depart="1086.38" departLane="best" from="994004819" to="994004819"/>
+    <trip id="bus36" type="bus_bus" depart="1348.61" departLane="best" departSpeed="max" from="226955127" to="226955127"/>
+    <trip id="bus40" type="bus_bus" depart="1498.45" departLane="best" departSpeed="max" from="23018389#1" to="23018389#1"/>
+    <trip id="bus50" type="bus_bus" depart="1873.07" departLane="best" from="-548865432" to="-548865432"/>
+    <trip id="bus58" type="bus_bus" depart="2172.76" departLane="best" from="22915139" to="22915139"/>
+    <trip id="bus67" type="bus_bus" depart="2509.91" departLane="best" from="-548865432" to="-548865432"/>
+    <trip id="bus71" type="bus_bus" depart="2659.76" departLane="best" from="-548865432" to="-548865432"/>
+    <trip id="bus77" type="bus_bus" depart="2884.52" departLane="best" departSpeed="max" from="-23018400" to="-23018400"/>
+</routes>

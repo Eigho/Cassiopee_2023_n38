@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2023-03-19 18:34:45 by Eclipse SUMO netedit Version 1.16.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/simulations_de_base/speed_bump_test.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="/home/eigho/TSP/2A/Cassiop/SUMO_DOCS/simulations_de_base/speed_bump_test.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="0.00,0.00,200.00,0.00" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":ral1_0" function="internal">
+        <lane id=":ral1_0_0" index="0" speed="10.23" length="0.10" shape="95.00,-1.60 95.00,-1.60"/>
+    </edge>
+    <edge id=":ral2_0" function="internal">
+        <lane id=":ral2_0_0" index="0" speed="10.23" length="0.10" shape="105.00,-1.60 105.00,-1.60"/>
+    </edge>
+
+    <edge id="E0" from="beg" to="ral1" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="95.00" shape="0.00,-1.60 95.00,-1.60"/>
+    </edge>
+    <edge id="E2" from="ral2" to="end" priority="-1">
+        <lane id="E2_0" index="0" speed="13.89" length="95.00" shape="105.00,-1.60 200.00,-1.60"/>
+    </edge>
+    <edge id="speed_bump" from="ral1" to="ral2" priority="-1">
+        <lane id="speed_bump_0" index="0" speed="6.57" length="10.00" shape="95.00,-1.60 105.00,-1.60"/>
+    </edge>
+
+    <junction id="beg" type="dead_end" x="0.00" y="0.00" incLanes="" intLanes="" shape="0.00,0.00 0.00,-3.20"/>
+    <junction id="end" type="dead_end" x="200.00" y="0.00" incLanes="E2_0" intLanes="" shape="200.00,-3.20 200.00,0.00"/>
+    <junction id="ral1" type="priority" x="95.00" y="0.00" incLanes="E0_0" intLanes=":ral1_0_0" shape="95.00,0.00 95.00,-3.20 95.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="ral2" type="priority" x="105.00" y="0.00" incLanes="speed_bump_0" intLanes=":ral2_0_0" shape="105.00,0.00 105.00,-3.20 105.00,0.00">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+
+    <connection from="E0" to="speed_bump" fromLane="0" toLane="0" via=":ral1_0_0" dir="s" state="M"/>
+    <connection from="speed_bump" to="E2" fromLane="0" toLane="0" via=":ral2_0_0" dir="s" state="M"/>
+
+    <connection from=":ral1_0" to="speed_bump" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":ral2_0" to="E2" fromLane="0" toLane="0" dir="s" state="M"/>
+
+</net>
