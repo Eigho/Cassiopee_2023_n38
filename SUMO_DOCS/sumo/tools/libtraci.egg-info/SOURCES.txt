@@ -1,8 +1,0 @@
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci/__init__.py
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci/_libtraci.so
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci/libtraci.py
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci.egg-info/PKG-INFO
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci.egg-info/SOURCES.txt
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci.egg-info/dependency_links.txt
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci.egg-info/requires.txt
-/build/sumo-Ih1Bbt/sumo-1.16.0/tools/libtraci.egg-info/top_level.txt
